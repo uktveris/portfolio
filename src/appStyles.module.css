@@ -1,0 +1,51 @@
+.container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    line-height: 1.5;
+}
+
+.mainHeading {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em;
+}
+
+.projectsHeading {
+    text-align: center;
+    font-size: 3em;
+}
+
+.content {
+    margin: 0 3em;
+    padding-top: calc(5em + 1px);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .mainHeading {
+        font-size: 2.5em;
+    }
+}

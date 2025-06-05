@@ -395,6 +395,7 @@ section {
     align-items: center;
 }
 
+.skillModalContent > p > a,
 .skillModalContent > p > a:visited {
     color: white;
 }

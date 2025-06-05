@@ -14,7 +14,7 @@ export function NavBar() {
         const closeSidebar = () => {
             if (window.innerWidth > 800 && isOpen) {
                 setIsOpen(false);
-            }
+            } 
         }
         window.addEventListener('resize', closeSidebar);
 

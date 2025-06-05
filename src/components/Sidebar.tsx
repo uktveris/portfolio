@@ -1,7 +1,6 @@
 import styles from "./styles.module.css";
 
 export function Sidebar({ isOpen, toggleSidebar,}: { isOpen: boolean, toggleSidebar: () => void;}) {
-    // if(!isOpen) return null;
     return (
         <nav className={`${styles.sidebarContainer} ${isOpen ? styles.open : styles.hidden}`}>
             <ul className={styles.sidebar}>

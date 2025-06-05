@@ -34,7 +34,6 @@ export function NavBar() {
                     <li><a href='#projects'>Projects</a></li>
                     <li><a href='#skills'>Skills</a></li>
                     <li><a href='#contact'>Contact</a></li>
-                    {/* <li><button onClick={toggleSidebar}>Menu</button></li> */}
                     <li className={styles.burgerMenu} onClick={toggleSidebar}><CiMenuBurger size={25}/></li>
                 </ul>
             </nav>

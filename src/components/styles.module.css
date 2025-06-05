@@ -395,6 +395,10 @@ section {
     align-items: center;
 }
 
+.skillModalContent > p > a:visited {
+    color: white;
+}
+
 .skillModalIcon {
     font-size: 3em;
 }
@@ -411,6 +415,7 @@ section {
 .skillModalCloseButton:hover {
     color: white;
 }
+
 
 @keyframes fadeOverlay {
     to {

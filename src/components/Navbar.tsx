@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './styles.module.css'
 import { Sidebar } from './Sidebar';
-// import { CiMenuBurger } from "react-icons/ci";
+import { CiMenuBurger } from 'react-icons/ci';
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,13 +9,13 @@ export function NavBar() {
         setIsOpen(!isOpen);
     }
     
-    const closeSidebar = () => {
-        if (window.innerWidth > 800 && isOpen) {
-            setIsOpen(false);
-        }
-    }
     
     useEffect(() => {
+        const closeSidebar = () => {
+            if (window.innerWidth > 800 && isOpen) {
+                setIsOpen(false);
+            }
+        }
         window.addEventListener('resize', closeSidebar);
 
         closeSidebar();
@@ -34,7 +34,8 @@ export function NavBar() {
                     <li><a href='#projects'>Projects</a></li>
                     <li><a href='#skills'>Skills</a></li>
                     <li><a href='#contact'>Contact</a></li>
-                    <li><button onClick={toggleSidebar}>Menu</button></li>
+                    {/* <li><button onClick={toggleSidebar}>Menu</button></li> */}
+                    <li className={styles.burgerMenu} onClick={toggleSidebar}><CiMenuBurger size={25}/></li>
                 </ul>
             </nav>
             <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>

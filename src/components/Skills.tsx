@@ -99,7 +99,7 @@ interface Skill {
     id: string;
     icon: JSX.Element;
     name: string;
-    description: string;
+    description: JSX.Element;
 }
 
 export function Skills() {
@@ -129,7 +129,7 @@ interface SkillModalProps {
         id: string;
         icon: JSX.Element;
         name: string;
-        description: string;
+        description: JSX.Element;
     };
     onClose: () => void;
 }

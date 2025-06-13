@@ -2,6 +2,11 @@ section {
     scroll-margin-top: 100px;
 }
 
+section.hero {
+    height: 100dvh;
+    min-height: 100svh;
+}
+
 .imgContainer {
     width: 100%;
     height: auto;
@@ -38,9 +43,14 @@ section {
     /* background-color: rgba(0, 0, 0, 0.24); */
 }
 
-.navbar li:last-child {
+.navbar li:first-child {
     display: none;
 }
+
+/* .navbar li:last-child { */
+/*     display: none; */
+/*     align-self: center; */
+/* } */
 
 .navigationBar > .navbar > li > a,
 .sidebarContainer > .sidebar > li > a {
@@ -99,7 +109,7 @@ section {
 }
 
 .sidebar {
-    height: 99vh;
+    height: 99dvh;
     width: calc(100% - 40px);
     background-color: black;
     display: flex;
@@ -458,7 +468,11 @@ section {
         display: none;
     }
     
-    .navbar li:last-child {
+    /* .navbar li:last-child { */
+    /*     display: block; */
+    /* } */
+    
+    .navbar li:first-child {
         display: block;
     }
     

@@ -29,12 +29,12 @@ export function NavBar() {
         <div>
             <nav className={styles.navigationBar}>
                 <ul className={styles.navbar}>
+                    <li className={styles.burgerMenu} onClick={toggleSidebar}><CiMenuBurger size={25}/></li>
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#education'>Education</a></li>
                     <li><a href='#projects'>Projects</a></li>
                     <li><a href='#skills'>Skills</a></li>
                     <li><a href='#contact'>Contact</a></li>
-                    <li className={styles.burgerMenu} onClick={toggleSidebar}><CiMenuBurger size={25}/></li>
                 </ul>
             </nav>
             <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>

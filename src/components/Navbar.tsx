@@ -8,6 +8,13 @@ export function NavBar() {
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
     }
+
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? "hidden" : "";
+        return () => {
+            document.body.style.overflow = "";
+        }
+    }, [isOpen])
     
     
     useEffect(() => {

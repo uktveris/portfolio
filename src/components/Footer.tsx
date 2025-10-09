@@ -14,7 +14,7 @@ export function Footer() {
                         <a href="https://www.linkedin.com/in/marius-uktveris-1261221a8/" target="_blank"><FaLinkedin size={40}/></a>
                     </div>
                     <div>
-                        <a href="https://github.com/mariusuktveris" target="_blank"><FaGithub size={40} /></a>
+                        <a href="https://github.com/uktveris" target="_blank"><FaGithub size={40} /></a>
                     </div>
                     <div>
                         <a href="https://x.com/mariusUktveris" target="_blank"><FaXTwitter size={40} /></a>

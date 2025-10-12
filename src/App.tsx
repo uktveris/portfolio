@@ -7,21 +7,21 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 
 function App() {
-	return (
-		<div className={styles.container}>
-			<NavBar />
-			<div className={styles.content}>
-			<section id='home'>
-				<h1 className={styles.mainHeading}>Welcome to my portfolio.</h1>
-			</section>
-				<Hero/>
-				<Education/>
-				<Projects/>
-				<Skills/>
-			</div>
-			<Footer />
-		</div>
-	);
+  return (
+    <div className={styles.container}>
+      <NavBar />
+      <div className={styles.content}>
+        <section id="home">
+          <h1 className={styles.mainHeading}>Hello, I'm Marius.</h1>
+        </section>
+        <Hero />
+        <Education />
+        <Projects />
+        <Skills />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

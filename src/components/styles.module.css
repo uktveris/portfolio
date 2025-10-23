@@ -26,7 +26,7 @@ section.hero {
 .navigationBar {
   border-bottom: 1px solid white;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
@@ -40,18 +40,11 @@ section.hero {
   justify-content: space-evenly;
   margin: 1em;
   padding: 0;
-  /* backdrop-filter: blur(10px); */
-  /* background-color: rgba(0, 0, 0, 0.24); */
 }
 
 .navbar li:first-child {
   display: none;
 }
-
-/* .navbar li:last-child { */
-/*     display: none; */
-/*     align-self: center; */
-/* } */
 
 .navigationBar > .navbar > li > a,
 .sidebarContainer > .sidebar > li > a {
@@ -110,11 +103,9 @@ section.hero {
 }
 
 .sidebar {
-  /* height: 99dvh; */
   height: auto;
   margin: auto;
   width: calc(100% - 40px);
-  /* background-color: black; */
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -126,7 +117,6 @@ section.hero {
 }
 
 .sidebarContainer {
-  /* position: absolute; */
   position: fixed;
   top: 0;
   left: 0;
@@ -248,7 +238,6 @@ section.hero {
 
 .personalInfo {
   align-self: center;
-  /*text-align: justify;*/
   margin: 0 10%;
   font-size: 25px;
 }
@@ -271,9 +260,7 @@ section.hero {
   border: 1px solid white;
   border-radius: 30px;
   padding: 1em;
-  width: 100%;
   flex: 1 1 400px;
-  margin: 2em min(2em, 10%) 2em;
   transition: transform 0.3s ease 0s;
   overflow: hidden;
 }
@@ -304,11 +291,17 @@ section.hero {
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.295);
 }
 
+.eduContainer,
+.projectsContainer {
+  padding: 2em 0;
+}
+
 .eduContainer > h2,
 .projectsContainer > h2 {
   text-align: center;
   font-size: 2em;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 .eduCard a:visited,
@@ -321,6 +314,7 @@ section.hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 2em;
 }
 
 .eduCard p,
@@ -330,11 +324,10 @@ section.hero {
 
 .card {
   height: auto;
-  width: 100%;
   flex: 1 1 400px;
   border: 1px solid white;
   border-radius: 30px;
-  margin: 2em min(2em, 10%) 2em;
+  /*margin: 1em auto;*/
   padding: 1em;
   transition: transform 0.3s ease 0s;
   overflow: hidden;
@@ -359,12 +352,16 @@ section.hero {
 .skillsContainer > h2 {
   text-align: center;
   font-size: 2em;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.skillsContainer {
+  padding: 2em 0;
 }
 
 .skill {
   flex: 1 1 auto;
-  max-width: 500px;
   min-width: 150px;
   display: flex;
   align-items: center;
@@ -374,7 +371,6 @@ section.hero {
   border: 1px solid white;
   border-radius: 30px;
   padding: 0.1em 0.1em;
-  margin: 0.5em;
   width: auto;
 }
 
@@ -389,11 +385,11 @@ section.hero {
 }
 
 .skillsContainer > .skills {
-  padding: 0 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
+  gap: 1em;
 }
 
 .skillModalOverlay {
@@ -473,10 +469,30 @@ section.hero {
     text-align: center;
   }
 
-  .card,
+  .educations > :not(:last-child) {
+    margin-bottom: 2em;
+  }
+
+  .projects > :not(:last-child) {
+    margin-bottom: 2em;
+  }
+
+  /*.card,
   .eduCard {
-    width: 90%;
-    /*margin: 2em auto;*/
+    width: auto;
+    margin: 0;
+  }*/
+
+  .skillsContainer > .skills {
+    padding: 0;
+  }
+
+  /*.eduContainer,
+  .projectsContainer {
+    padding: 0;
+  }*/
+
+  .skill {
     margin: 0;
   }
 

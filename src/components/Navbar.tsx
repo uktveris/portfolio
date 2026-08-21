@@ -5,7 +5,9 @@ import { CiMenuBurger } from "react-icons/ci";
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
   const toggleSidebar = () => {
+    setHasInteracted(true);
     setIsOpen(!isOpen);
   };
 
@@ -55,7 +57,7 @@ export function NavBar() {
           </li>
         </ul>
       </nav>
-      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isOpen} hasInteracted={hasInteracted} toggleSidebar={toggleSidebar} />
     </div>
   );
 }

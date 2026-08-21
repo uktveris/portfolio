@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
 
-export function Sidebar({ isOpen, toggleSidebar,}: { isOpen: boolean, toggleSidebar: () => void;}) {
+export function Sidebar({ isOpen, hasInteracted, toggleSidebar,}: { isOpen: boolean, hasInteracted: boolean, toggleSidebar: () => void;}) {
     return (
-        <nav className={`${styles.sidebarContainer} ${isOpen ? styles.open : styles.hidden}`}>
+        <nav className={`${styles.sidebarContainer} ${hasInteracted ? (isOpen ? styles.open : styles.hidden) : ""}`}>
             <ul className={styles.sidebar}>
                 <li><button onClick={toggleSidebar}>Close</button></li>
                 <li><a onClick={toggleSidebar} href="#home">Home</a></li>
